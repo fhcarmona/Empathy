@@ -1,0 +1,6 @@
+# AUTHOR: PERALTA GAMES
+# SCOPE: DEFINIR FLUXO DE CENAS DO PLOT DO INVESTIGADOR
+label investigator:
+    "ABC"
+
+    return

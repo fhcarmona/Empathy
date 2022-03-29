@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/scripts/scenes/psychiatrist/scene-0010.rpy", line 23: end of line expected.
+    with Pause 1
+               ^
+
+Ren'Py Version: Ren'Py 7.4.11.2266
+Sun Mar 27 15:49:07 2022
