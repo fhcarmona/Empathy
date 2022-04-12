@@ -1,34 +1,30 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 29, in script call
-    call medic
-  File "game/scripts/miscellaneous/psychiatrist.rpy", line 48, in script call
-    call magazine(2)
-  File "game/script.rpy", line 29, in script call
-    call medic
-  File "game/scripts/miscellaneous/psychiatrist.rpy", line 48, in script call
-    call magazine(2)
-ScriptError: could not find label 'magazine'.
+  File "game/script.rpy", line 24, in script call
+    call investigator from _call_investigator
+  File "game/scripts/miscellaneous/investigator.rpy", line 32, in script call
+    call scene_0700
+  File "game/scripts/scenes/investigator/scene-0700.rpy", line 39, in script
+    leg "Boa tarde senhores"
+Exception: Sayer 'leg' is not defined.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 29, in script call
-    call medic
-  File "game/scripts/miscellaneous/psychiatrist.rpy", line 48, in script call
-    call magazine(2)
-  File "renpy/ast.py", line 1490, in execute
-    rv = renpy.game.context().call(label, return_site=self.next.name)
-  File "game/script.rpy", line 29, in script call
-    call medic
-  File "game/scripts/miscellaneous/psychiatrist.rpy", line 48, in script call
-    call magazine(2)
-  File "renpy/script.py", line 918, in lookup
-    raise ScriptError("could not find label '%s'." % str(original))
-ScriptError: could not find label 'magazine'.
+  File "game/script.rpy", line 24, in script call
+    call investigator from _call_investigator
+  File "game/scripts/miscellaneous/investigator.rpy", line 32, in script call
+    call scene_0700
+  File "game/scripts/scenes/investigator/scene-0700.rpy", line 39, in script
+    leg "Boa tarde senhores"
+  File "renpy/ast.py", line 681, in execute
+    who = eval_who(self.who, self.who_fast)
+  File "renpy/ast.py", line 574, in eval_who
+    raise Exception("Sayer '%s' is not defined." % who)
+Exception: Sayer 'leg' is not defined.
 
 Windows-10-10.0.19041
 Ren'Py 7.4.11.2266
- 1.0
-Sun Mar 27 15:54:43 2022
+EMPATHY 0.1
+Sat Apr  9 15:26:33 2022

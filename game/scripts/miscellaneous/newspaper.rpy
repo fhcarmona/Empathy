@@ -17,10 +17,10 @@ label newspaper(artigo=-1):
         jor "Homem Foge Depois de Atropelamento"
 
         # ESCOLHA DA PSIQUIATRA DEFINE O QUE OCORRE NO JORNAL
-        if psi_001==0:
-            jor "Defensor ou Agressor? Pai Hospitaliza Homem em Festa Infantil"
-        else:
+        if psi_001==1:
             jor "Visite o Parque Aquático. Desconto Familiar."
+        else:
+            jor "Defensor ou Agressor? Pai Hospitaliza Homem em Festa Infantil"
     elif artigo==2:
         # DEFINE COMO JORNAL VISTO
         $jornal[1]=1

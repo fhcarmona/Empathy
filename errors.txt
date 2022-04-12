@@ -2,9 +2,11 @@
 errors listed below, and try again.
 
 
-File "game/scripts/scenes/psychiatrist/scene-0010.rpy", line 23: end of line expected.
-    with Pause 1
-               ^
+The label scene_0900 is defined twice, at File "game/scripts/scenes/investigator/scene-0900.rpy", line 4:
+label scene_0900:
+and File "game/scripts/scenes/investigator/scene-1000.rpy", line 4:
+label scene_0900:
+
 
 Ren'Py Version: Ren'Py 7.4.11.2266
-Sun Mar 27 15:49:07 2022
+Tue Apr 12 11:03:23 2022
