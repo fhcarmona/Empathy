@@ -23,14 +23,13 @@ define gui.show_name = False
 
 ## The version of the game.
 
-define config.version = "0.2"
+define config.version = "0.3"
 
 
 ## Text that is placed on the game's about screen. Place the text between the
 ## triple-quotes, and leave a blank line between paragraphs.
 
-define gui.about = _p("""
-""")
+define gui.about = _p("""Em um país em crise devido a acontecimentos políticos, uma série de assassinatos começam a surgir com uma similaridade em suas mortes.\nConheça e desvende a história dos acontecimentos e descubra as razões por trás deles.""")
 
 
 ## A short name for the game used for executables and directories in the built
@@ -48,7 +47,7 @@ define build.name = "EMPATHY"
 
 define config.has_sound = True
 define config.has_music = True
-define config.has_voice = True
+define config.has_voice = False
 
 
 ## To allow the user to play a test sound on the sound or voice channel,

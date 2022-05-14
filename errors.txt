@@ -2,11 +2,9 @@
 errors listed below, and try again.
 
 
-The label scene_0900 is defined twice, at File "game/scripts/scenes/investigator/scene-0900.rpy", line 4:
-label scene_0900:
-and File "game/scripts/scenes/investigator/scene-1000.rpy", line 4:
-label scene_0900:
-
+File "game/screens.rpy", line 637: Line is indented, but the preceding spacing statement does not expect a block. Please check this line's indentation.
+    button:
+    ^
 
 Ren'Py Version: Ren'Py 7.4.11.2266
-Tue Apr 12 11:03:23 2022
+Sat May 14 13:06:48 2022
