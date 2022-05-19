@@ -1,126 +1,96 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/screens.rpy", line 593, in execute
-    screen load():
-  File "game/screens.rpy", line 593, in execute
-    screen load():
-  File "game/screens.rpy", line 597, in execute
-    use file_slots(_("Carregar"))
-  File "game/screens.rpy", line 600, in execute
-    screen file_slots(title):
-  File "game/screens.rpy", line 600, in execute
-    screen file_slots(title):
-  File "game/screens.rpy", line 604, in execute
-    use game_menu(title):
-  File "game/screens.rpy", line 420, in execute
-    screen game_menu(title, scroll=None, yinitial=0.0):
-  File "game/screens.rpy", line 420, in execute
-    screen game_menu(title, scroll=None, yinitial=0.0):
-  File "game/screens.rpy", line 429, in execute
-    frame:
-  File "game/screens.rpy", line 432, in execute
-    hbox:
-  File "game/screens.rpy", line 438, in execute
-    frame:
-  File "game/screens.rpy", line 441, in execute
-    if scroll == "viewport":
-  File "game/screens.rpy", line 472, in execute
-    transclude
-  File "game/screens.rpy", line 604, in execute
-    use game_menu(title):
-  File "game/screens.rpy", line 606, in execute
-    fixed:
-  File "game/screens.rpy", line 625, in execute
-    grid gui.file_slot_cols gui.file_slot_rows:
-  File "game/screens.rpy", line 637, in execute
-    button:
-  File "game/screens.rpy", line 640, in execute
-    has vbox
-  File "game/screens.rpy", line 642, in execute
-    add FileScreenshot(slot) xalign 0.5
-  File "game/screens.rpy", line 642, in <module>
-    add FileScreenshot(slot) xalign 0.5
-NameError: name 'slot' is not defined
+Exception: Could not find font u'fonts\x0biner-hand-itc.ttf'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in script
-    python hide:
+  File "renpy/common/_layout/screen_load_save.rpym", line 35, in script
+    $ ui.interact()
   File "renpy/ast.py", line 928, in execute
     renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
   File "renpy/python.py", line 2245, in py_exec_bytecode
     exec(bytecode, globals, locals)
-  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in <module>
-    python hide:
-  File "renpy/common/_layout/screen_main_menu.rpym", line 35, in _execute_python_hide
-    ui.interact()
+  File "renpy/common/_layout/screen_load_save.rpym", line 35, in <module>
+    $ ui.interact()
   File "renpy/ui.py", line 298, in interact
     rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
   File "renpy/display/core.py", line 3325, in interact
     repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, **kwargs)
-  File "renpy/display/core.py", line 3737, in interact_core
-    root_widget.visit_all(lambda i : i.per_interact())
-  File "renpy/display/core.py", line 568, in visit_all
-    d.visit_all(callback, seen)
-  File "renpy/display/core.py", line 568, in visit_all
-    d.visit_all(callback, seen)
-  File "renpy/display/core.py", line 568, in visit_all
-    d.visit_all(callback, seen)
-  File "renpy/display/core.py", line 568, in visit_all
-    d.visit_all(callback, seen)
-  File "renpy/display/screen.py", line 436, in visit_all
-    callback(self)
-  File "renpy/display/core.py", line 3737, in <lambda>
-    root_widget.visit_all(lambda i : i.per_interact())
-  File "renpy/display/screen.py", line 447, in per_interact
-    self.update()
-  File "renpy/display/screen.py", line 637, in update
-    self.screen.function(**self.scope)
-  File "game/screens.rpy", line 593, in execute
-    screen load():
-  File "game/screens.rpy", line 593, in execute
-    screen load():
-  File "game/screens.rpy", line 597, in execute
-    use file_slots(_("Carregar"))
-  File "game/screens.rpy", line 600, in execute
-    screen file_slots(title):
-  File "game/screens.rpy", line 600, in execute
-    screen file_slots(title):
-  File "game/screens.rpy", line 604, in execute
-    use game_menu(title):
-  File "game/screens.rpy", line 420, in execute
-    screen game_menu(title, scroll=None, yinitial=0.0):
-  File "game/screens.rpy", line 420, in execute
-    screen game_menu(title, scroll=None, yinitial=0.0):
-  File "game/screens.rpy", line 429, in execute
-    frame:
-  File "game/screens.rpy", line 432, in execute
-    hbox:
-  File "game/screens.rpy", line 438, in execute
-    frame:
-  File "game/screens.rpy", line 441, in execute
-    if scroll == "viewport":
-  File "game/screens.rpy", line 472, in execute
-    transclude
-  File "game/screens.rpy", line 604, in execute
-    use game_menu(title):
-  File "game/screens.rpy", line 606, in execute
-    fixed:
-  File "game/screens.rpy", line 625, in execute
-    grid gui.file_slot_cols gui.file_slot_rows:
-  File "game/screens.rpy", line 637, in execute
-    button:
-  File "game/screens.rpy", line 640, in execute
-    has vbox
-  File "game/screens.rpy", line 642, in execute
-    add FileScreenshot(slot) xalign 0.5
-  File "game/screens.rpy", line 642, in <module>
-    add FileScreenshot(slot) xalign 0.5
-NameError: name 'slot' is not defined
+  File "renpy/display/core.py", line 3839, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+  File "renpy/display/core.py", line 2565, in draw_screen
+    renpy.config.screen_height,
+  File "render.pyx", line 492, in renpy.display.render.render_screen
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/layout.py", line 826, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/transition.py", line 368, in render
+    top = render(self.new_widget, width, height, st, at)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/layout.py", line 826, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/layout.py", line 826, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/screen.py", line 688, in render
+    child = renpy.display.render.render(self.child, w, h, st, at)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/layout.py", line 826, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/layout.py", line 1264, in render
+    st, at)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/layout.py", line 987, in render
+    surf = render(d, rw, height - y, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/layout.py", line 1264, in render
+    st, at)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/layout.py", line 826, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/layout.py", line 493, in render
+    renders = [ render(i, renwidth, renheight, st, at) for i in children ]
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/behavior.py", line 795, in render
+    rv = super(Button, self).render(width, height, st, at)
+  File "renpy/display/layout.py", line 1264, in render
+    st, at)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/layout.py", line 1029, in render
+    surf = render(d, width - x, rh, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/text/text.py", line 2096, in render
+    virtual_layout = Layout(self, width, height, renders, drawable_res=False, size_only=True)
+  File "renpy/text/text.py", line 639, in __init__
+    glyphs = ts.glyphs(s, self)
+  File "renpy/text/text.py", line 248, in glyphs
+    fo = font.get_font(self.font, self.size, self.bold, self.italic, 0, self.antialias, self.vertical, self.hinting, layout.oversample)
+  File "renpy/text/font.py", line 702, in get_font
+    face = load_face(fn)
+  File "renpy/text/font.py", line 643, in load_face
+    raise Exception("Could not find font {0!r}.".format(orig_fn))
+Exception: Could not find font u'fonts\x0biner-hand-itc.ttf'.
 
 Windows-10-10.0.19041
 Ren'Py 7.4.11.2266
-EMPATHY 0.3
-Sat May 14 13:07:43 2022
+EMPATHY 0.4
+Thu May 19 01:25:02 2022

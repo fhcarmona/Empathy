@@ -76,7 +76,7 @@ label scene_0200(caminho):
                 i02 "Está certo, vou pegar o bloco de anotações"
 
                 # ENTRA NOVAMENTE NO CENA 0200 AFIM DE INVESTIGAR A PSIQUIATRA
-                call scene_0200(1)
+                call scene_0200(1) from _call_scene_0200_1
 
             "Não":
                 i02 "Bom, vamos voltar para a delegacia"

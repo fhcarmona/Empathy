@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 637: Line is indented, but the preceding spacing statement does not expect a block. Please check this line's indentation.
-    button:
-    ^
+File "game/screens.rpy", line 362: u'text_size' is not a keyword argument or valid child for the text statement.
+    text "{color=#f00}E{/color}{color=#f00}m{/color}{color=#f00}p{/color}{color=#f00}a{/color}{color=#f00}t{/color}{color=#f00}h{/color}{color=#f00}y{/color}" text_size 32
+                                                                                                                                                                        ^
 
 Ren'Py Version: Ren'Py 7.4.11.2266
-Sat May 14 13:06:48 2022
+Thu May 19 00:42:04 2022
