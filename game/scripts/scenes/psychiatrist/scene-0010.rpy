@@ -2,6 +2,10 @@
 # SCOPE: PORAO, ATAQUE DA PSIQUIATRA AO SERIAL KILLER
 
 label scene_0010:
+    scene black
+
+    tln "13/05/2022 - 22:02h | PORÃO"
+
     # LIMPA A TELA E MOSTRA O AMBIENTE DO PORAO
     scene basement
     with dissolve

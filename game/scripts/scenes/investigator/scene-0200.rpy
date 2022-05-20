@@ -15,9 +15,9 @@ label scene_0200(caminho):
         #
         i01 "Olá [p01_nome], acredito que lembre de nós"
         i01 "Iremos fazer algumas perguntas em relação ao ocorrido"
-        i02 "Poderia nos contar como foi no dia do ocorrido?"
+        i02 "Poderia nos contar o que aconteceu naquele dia?"
         p01 "Agora desejam que eu fale? Para que irei falar, se irão usar contra mim."
-        i01 "O seu caso já tem uma determinação, apenas estamos tentando preencher umas papeladas"
+        i01 "O seu caso já tem uma sentença, queremos apenas preencher a papelada e dá-lo por encerrados"
         i02 "Colaborar com a investigação pode ser benéfico para você"
         p01 "Qual seria esse benefício?"
         i02 "Dependendo do quanto colaborar poderemos ajudar em sua sentença"
@@ -85,7 +85,7 @@ label scene_0200(caminho):
     elif caminho==1:
         scene black
 
-        tln "18/04/2022 - 9:03h | CLINICA PSIQUIATRICA"
+        tln "18/04/2022 - 09:03h | CLINICA RECEPÇÃO"
 
         # LIMPA A TELA E MOSTRA O AMBIENTE
         scene clinic-reception
@@ -97,6 +97,10 @@ label scene_0200(caminho):
         i02 "Sem problemas, aqui está"
         psi "Vejo que é sobre o paciente [p01_nome]"
         psi "Entre comigo, vamos ao consultório"
+
+        scene black
+
+        tln "18/04/2022 - 09:11h | CLINICA CONSULTÓRIO"
 
         # LIMPA A TELA E MOSTRA O AMBIENTE
         scene clinic

@@ -12,7 +12,7 @@ define a01 = Character("[a01_nome]", color="#999999")                  # ANONIMO
 define a02 = Character("[a02_nome]", color="#999999")                  # ANONIMO 02 - COMENTARIO DE INTERNET
 define a03 = Character("[a03_nome]", color="#999999")                  # ANONIMO 03 - COMENTARIO DE INTERNET
 define i01 = Character("[i01_nome]", color="#695F4F")                  # INVESTIGADOR 01
-define i02 = Character("[i02_nome]", color="#C98C00")                  # INVESTIGADOR 01
+define i02 = Character("[i02_nome]", color="#C98C00")                  # INVESTIGADOR 02
 define bmn = Character("[bmn_nome]", color="#4A0094")                  # BARMAN
 define skr = Character("[skr_nome]", color="#4A0094")                  # SERIAL KILLER
 define del = Character("[del_nome]", color="#374F6B")                  # DELEGADO

@@ -1,20 +1,22 @@
 # AUTHOR: PERALTA GAMES
-# SCOPE: DESENVOLVER A PRIMEIRA SESSAO DA PSIQUIATRA (TUTORIAL JOGO)
+# SCOPE: DESENVOLVER A PRIMEIRA SESSAO DA PSIQUIATRA
 
 label scene_0001:
+    scene black
+
+    tln "10/04/2022 - 14:43h | CONSULTÓRIO PSIQUIATRA"
+
     # LIMPA A TELA E MOSTRA O AMBIENTE CONSULTORIO
     scene clinic
-
-    $paciente="Douglas"
 
     play music "audio/musics/psychiatrist.mp3"
 
     # TUTORIAL
-    psi "Bom dia [paciente], como estamos hoje?"
+    psi "Bom dia [p01_nome], como estamos hoje?"
     p01 "Seguindo doutora"
     psi "Conseguiu seguir as recomendações da última sessão?"
     p01 "Sim doutora, só não sei o quanto escrever o que penso pode me ajudar..."
-    psi "Fique tranquilo [paciente], o importante é você seguir a risca as minhas orientações"
+    psi "Fique tranquilo [p01_nome], o importante é você seguir a risca as minhas orientações"
     psi "Vamos continuar, como estão suas noites?"
     p01 "Minhas noites?"
     p01 "Continuo a ter os mesmos sonhos"
@@ -41,6 +43,6 @@ label scene_0001:
             psi "É importante acompanhar o crescimento de perto, mas o seu medo pode causar sofrimento para sua filha"
             p01 "Entendo doutora, você tem razão"
 
-        "[paciente] lembrará dessas palavras"
+        "[p01_nome] lembrará dessas palavras"
 
     return

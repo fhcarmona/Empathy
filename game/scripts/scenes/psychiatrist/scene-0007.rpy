@@ -2,11 +2,13 @@
 # SCOPE: CONSULTORIO, PACIENTE 03 CONTANDO SOBRE A INFANCIA
 
 label scene_0007:
+    scene black
+
+    tln "03/07/2020 - 17:32h | CLINICA PSIQUIATRICA"
+
     # LIMPA A TELA E MOSTRA O AMBIENTE CONSULTORIO
     scene clinic
     with dissolve
-
-    $paciente="Débora"
 
     psi "E como era sua relação com seu primo?"
     p03 "Éramos bem próximos, brincávamos muito juntos"

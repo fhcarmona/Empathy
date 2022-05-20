@@ -2,6 +2,10 @@
 # SCOPE: PORAO, PSIQUIATRA PRESA NO PORAO
 
 label scene_0009:
+    scene black
+
+    tln "13/05/2022 - 20:16h | LOCAL DESCONHECIDO"
+
     # LIMPA A TELA E MOSTRA O AMBIENTE DO PORAO
     scene basement
     with dissolve

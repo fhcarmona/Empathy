@@ -14,7 +14,7 @@ label scene_0700:
     i02 "Bingo!"
     i01 "Encontrou?"
     i02 "Sim, [p03_nome] é o nome dela, mora próximo do bar"
-    i01 "Perfeito! Pegue as coisas e vamos"
+    i01 "Espere um momento, irei atender antes de sairmos"
 
     scene black
     with Pause(2)
@@ -46,6 +46,6 @@ label scene_0700:
     leg "Depende de muitas coisas, mas dessa forma? PH alto, temperatura e pouco cloro"
     i02 "Isso indica que o assassino possui uma piscina ou algo que faça essa água"
     leg "Exato, não foi possível identificar se a água foi criada artificialmente ou é pega do exterior de uma piscina aberta"
-    i01 "Muito obrigado, isso ajudará a diminuir o range de localidades"
+    i01 "Muito obrigado, isso ajudará a diminuir a busca de localidades"
 
     return

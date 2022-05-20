@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 362: u'text_size' is not a keyword argument or valid child for the text statement.
-    text "{color=#f00}E{/color}{color=#f00}m{/color}{color=#f00}p{/color}{color=#f00}a{/color}{color=#f00}t{/color}{color=#f00}h{/color}{color=#f00}y{/color}" text_size 32
-                                                                                                                                                                        ^
+File "game/screens.rpy", line 298: keyword argument u'action' appears more than once in a textbutton statement.
+    textbutton _("Novo Jogo") action Start() action [Play("sound", "heart_beating.mp3"), Start() ]
+                                                   ^
 
 Ren'Py Version: Ren'Py 7.4.11.2266
-Thu May 19 00:42:04 2022
+Thu May 19 22:24:36 2022

@@ -301,6 +301,9 @@ screen navigation():
             textbutton _("Sobre") action ShowMenu("about")
             textbutton _("Controles") action ShowMenu("help")
             textbutton _("Sair") action Quit(confirm=not main_menu)
+
+            timer 5 repeat True action [ Play("sound", "audio/sfx/heart_beating.mp3") ]
+
         # IN-GAME
         else:
             xalign 0.05

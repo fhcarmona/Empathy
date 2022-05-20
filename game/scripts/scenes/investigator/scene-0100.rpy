@@ -17,6 +17,10 @@ label scene_0100:
     del "[i01_nome], [i02_nome]. Na minha sala agora..."
     i01 "Sim senhor"
 
+    scene black
+
+    tln "17/04/2022 - 10:37h | GABINETE DO CHEFE DE POLÍCIA"
+
     # LIMPA A TELA E MOSTRA A SALA DO CHEFE DE POLICIA
     scene chiefs-room
 
@@ -25,8 +29,8 @@ label scene_0100:
     i02 "O jornal? É sobre o caso de ontem?"
     del "Exatamente..."
     del "Os jornalistas estão cada vez mais em cima depois dos acontecimentos, não podemos deixar passar nada"
-    del "Quero que vocês investiguem mais o caso da agressão, não desejo outro escândalo"
-    i02 "O sujeito já se encontra preso, não podemos só deixar o caso como resolvido?"
+    del "Quero que continuem investigando o caso"
+    i02 "O sujeito já se encontra preso, não podemos considerar o caso como resolvido?"
     del "Não. O caso está nos jornais, isso indica que eles poderão investigar mais"
     del "Vamos investigar antes deles"
     i01 "Entendido senhor"

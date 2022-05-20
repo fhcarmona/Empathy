@@ -51,7 +51,7 @@ label scene_0900:
     with dissolve
 
     i02 "Baseado na localidade das vítimas, elas estão em um range menor que vinte e cinco quilômetros"
-    i01 "Isso é um range bem grande, mas já sabiamos disso, onde quer chegar?"
+    i01 "Isso é um busca bem grande, mas já sabiamos disso, onde quer chegar?"
     i02 "Agora, se você filtra por lagos"
     i02 "E depois filtra por consultórios de psiquiatrias"
     i02 "Voilà!"
