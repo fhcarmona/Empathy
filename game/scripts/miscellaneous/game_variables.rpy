@@ -4,12 +4,13 @@
 label game_variables:
     # VARIAVEIS
     $narrativa=-1                       # ARMAZENA O VALOR DA NARRATIVA ESCOLHIDO PELO JOGADOR
-    $pais="Brasil"
-    $estado="São Paulo"
-    $cidade="Carapicuiba"
-    $bairro="Juventude"
+    $pais="Lisarb"
+    $estado="Oluap"
+    $cidade="Abiu Ciparac"
+    $bairro="Aierroc"
     $jornal=[0, 0, 0, 0]                # ARMAZENA O JORNAL LIDO
     $revista=[0, 0, 0, 0]               # ARMAZENA A REVISTA LIDA
+    $inventario=[0, 0]
     $bebida="Vodka"
 
     # ESCOLHAS PSIQUIATRA
@@ -43,7 +44,7 @@ label game_variables:
     $bmn_nome="[Barista] Carlos"            # BARISTA
     $skr_nome="Lector"                      # SERIAL KILLER
     $adv_nome="[Advogado] Gustavo"          # ADVOGADO PACIENTE 01
-    $del_nome="[Delegado] Flavio"           # DELEGADO
+    $dlg_nome="[Delegado] Flavio"           # DELEGADO
     $gar_nome="[Gari] Pedro"                # GARI
     $atm_nome="[Recepcionista] Jessica"     # ATENDENTE MOTEL
     $acp_nome="Veronica"                    # ACOMPANHANTE DO BAR

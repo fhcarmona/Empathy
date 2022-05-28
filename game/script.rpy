@@ -1,6 +1,22 @@
 # AUTHOR: PERALTA GAMES
 # SCOPE: DEFINIR O FLUXO DA GAMEPLAY
 
+# FUNCOES
+init python:
+    def narrative_image (*args):
+        # IDENTIFICADORES
+        nome = args[0]      # NOME DO PERSONAGEM DA LISTA DE CHARACTERS
+        lado = args[1]      # LADO QUE O PERSONAGEM ESTARA (LEFT, RIGHT E VAZIO)
+        humor = args[2]     # VARIACAO DE ROSTO
+        char_obj = args[3]  # OBJETO DO PERSONAGEM (PUXA NOME, COR, ETC)
+        fala = args[4]      # TEXTO ATUAL DO PERSONAGEM
+
+        # MOSTRA A IMAGEM DE FUNDO DO PERSONAGEM E A FALA, DEPOIS ESCONDE
+        if nome != "":
+            renpy.show(nome, at_list=[lado], layer='master', what=humor, zorder=0, tag="atual", behind=[])
+        renpy.say(char_obj, fala)
+        renpy.hide("atual")
+
 # INICIO DO JOGO
 label start:
     # DECLARA AS VARIAVEIS

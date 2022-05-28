@@ -10,8 +10,8 @@ label scene_0009:
     scene basement
     with dissolve
 
-    psi "Que dor de cabeça"
-    psi "Onde estou?"
+    $ narrative_image("psi sad", left, None, psi, "Que dor de cabeça") # psi "Que dor de cabeça"
+    $ narrative_image("psi sad", left, None, psi, "Onde estou?") # psi "Onde estou?"
 
     scene black
     with Pause(2)

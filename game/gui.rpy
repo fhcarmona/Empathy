@@ -23,45 +23,45 @@ init python:
 ## The colors of text in the interface.
 
 ## An accent color used throughout the interface to label and highlight text.
-define gui.accent_color = u'#918d88'
+define gui.accent_color = u'#FFFFFF'
 
 ## The color used for a text button when it is neither selected nor hovered.
-define gui.idle_color = u'#888888'
+define gui.idle_color = u'#FFFFFF'
 
 ## The small color is used for small text, which needs to be brighter/darker to
 ## achieve the same effect.
 define gui.idle_small_color = u'#aaaaaa'
 
 ## The color that is used for buttons and bars that are hovered.
-define gui.hover_color = u'#060606'
+define gui.hover_color = u'#C4A77B'
 
 ## The color used for a text button when it is selected but not focused. A
 ## button is selected if it is the current screen or preference value.
-define gui.selected_color = u'#918d88'
+define gui.selected_color = u'#FFFFFF'
 
 ## The color used for a text button when it cannot be selected.
 define gui.insensitive_color = u'#8888887f'
 
 ## Colors used for the portions of bars that are not filled in. These are not
 ## used directly, but are used when re-generating bar image files.
-define gui.muted_color = u'#e0b166'
-define gui.hover_muted_color = u'#8a6d3e'
+define gui.muted_color = u'#E0B166'
+define gui.hover_muted_color = u'#8A6D3E'
 
 ## The colors used for dialogue and menu choice text.
-define gui.text_color = u'#918d88'
-define gui.interface_text_color = u'#918d88'
+define gui.text_color = u'#FFFFFF'
+define gui.interface_text_color = u'#FFFFFF'
 
-
+#918d88
 ## Fonts and Font Sizes ########################################################
 
 ## The font used for in-game text.
-define gui.text_font = "fonts/viner-hand-itc.ttf"
+define gui.text_font = "fonts/veteran typewriter.ttf"
 
 ## The font used for character names.
-define gui.name_text_font = "fonts/viner-hand-itc.ttf"
+define gui.name_text_font = "fonts/veteran typewriter.ttf"
 
 ## The font used for out-of-game text.
-define gui.interface_text_font = "fonts/viner-hand-itc.ttf"
+define gui.interface_text_font = "fonts/veteran typewriter.ttf"
 
 ## The size of normal dialogue text.
 define gui.text_size = 22

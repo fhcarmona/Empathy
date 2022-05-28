@@ -10,9 +10,9 @@ label scene_0006:
     scene clinic
     with dissolve
 
-    i01 "Acredito que sejam estes os questionamentos, muito obrigado pela colaboração"
-    i02 "Caso lembre de alguma informação adicional, nos contate..."
-    i01 "Aqui está meu cartão"
-    psi "Está certo, [atm_nome], acompanhe os agentes, por favor"
+    $ narrative_image("i01", right, None, i01, "Acredito que sejam estes os questionamentos, muito obrigado pela colaboração") # i01 "Acredito que sejam estes os questionamentos, muito obrigado pela colaboração"
+    $ narrative_image("i02", right, None, i02, "Caso lembre de alguma informação adicional, nos contate...") # i02 "Caso lembre de alguma informação adicional, nos contate..."
+    $ narrative_image("i01", right, None, i01, "Aqui está meu cartão") # i01 "Aqui está meu cartão"
+    $ narrative_image("psi", left, None, psi, "Está certo, [atm_nome], acompanhe os agentes, por favor") # psi "Está certo, [atm_nome], acompanhe os agentes, por favor"
 
     return
