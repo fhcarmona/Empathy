@@ -1,42 +1,40 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "renpy/common/00start.rpy", line 212, in script call
-    call _load_reload_game from _call__load_reload_game_1
-  File "renpy/common/00keymap.rpy", line 504, in script
-    python hide:
-  File "renpy/common/00keymap.rpy", line 504, in <module>
-    python hide:
-  File "renpy/common/00keymap.rpy", line 514, in _execute_python_hide
-    renpy.load("_reload-2")
-Exception: Couldn't find a place to stop rolling back. Perhaps the script changed in an incompatible way?
+  File "game/script.rpy", line 82, in script call
+    call investigator
+  File "game/scripts/miscellaneous/investigator.rpy", line 26, in script call
+    call scene_0500 from _call_scene_0500
+  File "game/scripts/scenes/investigator/scene-0500.rpy", line 45, in script
+    $ inventory(3)
+  File "game/scripts/scenes/investigator/scene-0500.rpy", line 45, in <module>
+    $ inventory(3)
+  File "game/script.rpy", line 30, in inventory
+    inventario[item]=1
+IndexError: list assignment index out of range
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "renpy/common/00start.rpy", line 212, in script call
-    call _load_reload_game from _call__load_reload_game_1
-  File "renpy/common/00keymap.rpy", line 504, in script
-    python hide:
+  File "game/script.rpy", line 82, in script call
+    call investigator
+  File "game/scripts/miscellaneous/investigator.rpy", line 26, in script call
+    call scene_0500 from _call_scene_0500
+  File "game/scripts/scenes/investigator/scene-0500.rpy", line 45, in script
+    $ inventory(3)
   File "renpy/ast.py", line 928, in execute
     renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
   File "renpy/python.py", line 2245, in py_exec_bytecode
     exec(bytecode, globals, locals)
-  File "renpy/common/00keymap.rpy", line 504, in <module>
-    python hide:
-  File "renpy/common/00keymap.rpy", line 514, in _execute_python_hide
-    renpy.load("_reload-2")
-  File "renpy/loadsave.py", line 771, in load
-    log.unfreeze(roots, label="_after_load")
-  File "renpy/python.py", line 2200, in unfreeze
-    self.rollback(0, force=True, label=label, greedy=greedy, on_load=True)
-  File "renpy/python.py", line 2014, in rollback
-    self.load_failed()
-  File "renpy/python.py", line 1932, in load_failed
-    raise Exception("Couldn't find a place to stop rolling back. Perhaps the script changed in an incompatible way?")
-Exception: Couldn't find a place to stop rolling back. Perhaps the script changed in an incompatible way?
+  File "game/scripts/scenes/investigator/scene-0500.rpy", line 45, in <module>
+    $ inventory(3)
+  File "game/script.rpy", line 30, in inventory
+    inventario[item]=1
+  File "renpy/python.py", line 875, in do_mutation
+    return method(self, *args, **kwargs)
+IndexError: list assignment index out of range
 
 Windows-10-10.0.19041
 Ren'Py 7.4.11.2266
-EMPATHY 0.6
-Sat May 28 16:39:22 2022
+EMPATHY 0.7
+Fri Jun  3 16:40:16 2022

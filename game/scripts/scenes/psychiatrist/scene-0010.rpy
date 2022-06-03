@@ -10,12 +10,12 @@ label scene_0010:
     scene basement
     with dissolve
 
-    $ narrative_image("skr", right, None, skr, "Pensei que quando abrisse a porta você estaria gritando") # skr "Pensei que quando abrisse a porta você estaria gritando"
-    $ narrative_image("psi sad", left, None, psi, "Não darei tal prazer") # psi "Não darei tal prazer"
-    $ narrative_image("skr", right, None, skr, "Doutora, certo? Dei uma pesquisada em você, famosa...") # skr "Doutora, certo? Dei uma pesquisada em você, famosa..."
-    $ narrative_image("skr", right, None, skr, "Intrigante como alguém do seu porte, está tão longe de onde mora") # skr "Intrigante como alguém do seu porte, está tão longe de onde mora"
-    $ narrative_image("psi sad", left, None, psi, "Pensei em dar uma mudada de ambiente") # psi "Pensei em dar uma mudada de ambiente"
-    $ narrative_image("skr", right, None, skr, "Acredita mesmo que seja coincidência? Pois eu acho que...") # skr "Acredita mesmo que seja coincidência? Pois eu acho que..."
+    $ narrative_image("skr", right, None, skr, "Pensei que quando abrisse a porta você estaria gritando")
+    $ narrative_image("psi sad", left, None, psi, "Não darei tal prazer")
+    $ narrative_image("skr", right, None, skr, "Doutora, certo? Dei uma pesquisada em você, famosa...")
+    $ narrative_image("skr", right, None, skr, "Intrigante como alguém do seu porte, está tão longe de onde mora")
+    $ narrative_image("psi sad", left, None, psi, "Pensei em dar uma mudada de ambiente")
+    $ narrative_image("skr", right, None, skr, "Acredita mesmo que seja coincidência? Pois eu acho que...")
 
     scene black
     with Pause(2)
@@ -26,7 +26,7 @@ label scene_0010:
     play sound gunfire
     with Pause(1)
 
-    $ narrative_image("psi sad", left, None, psi, "Ah, que dor") # psi "Ah, que dor"
+    $ narrative_image("psi sad", left, None, psi, "Ah, que dor")
 
     pause 5
 

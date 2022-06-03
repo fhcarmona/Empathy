@@ -10,14 +10,14 @@ label scene_0004:
     scene clinic-reception
     with dissolve
 
-    $ narrative_image("i01", right, None, i01, "Bom dia [psi_nome], somos os [i02_nome] e este é o [i01_nome], somos responsáveis pelo caso de um de seus pacientes") # i01 "Bom dia [psi_nome], somos os [i02_nome] e este é o [i01_nome], somos responsáveis pelo caso de um de seus pacientes"
-    $ narrative_image("i01", right, None, i01, "Poderia nos ajudar com algumas questões?") # i01 "Poderia nos ajudar com algumas questões?"
-    $ narrative_image("psi", left, None, psi, "Claro, mas só posso entrar em certos detalhes com ordem judicial, o senhores a possuem?") # psi "Claro, mas só posso entrar em certos detalhes com ordem judicial, o senhores a possuem?"
-    $ narrative_image("i02", right, None, i02, "Sim, aqui está doutora") # i02 "Sim, aqui está doutora"
-    $ narrative_image("psi", left, None, psi, "Hum...") # psi "Hum..."
-    $ narrative_image("psi", left, None, psi, "Vejo que é sobre o paciente [p01_nome], aconteceu algo com ele?") # psi "Vejo que é sobre o paciente [p01_nome], aconteceu algo com ele?"
-    $ narrative_image("i01", right, None, i01, "Não se preocupe quanto a isso, podemos começar?") # i01 "Não aconteceu nada com ele, podemos começar?"
-    $ narrative_image("psi", left, None, psi, "Ah, desculpe, claro") # psi "Ah, desculpe, claro"
-    $ narrative_image("psi", left, None, psi, "Entre comigo, vamos ao consultório") # psi "Entre comigo, vamos ao consultório"
+    $ narrative_image("i01", right, None, i01, "Bom dia [psi_nome], somos os [i02_nome] e este é o [i01_nome], somos responsáveis pelo caso de um de seus pacientes")
+    $ narrative_image("i01", right, None, i01, "Poderia nos ajudar com algumas questões?")
+    $ narrative_image("psi", left, None, psi, "Claro, mas só posso entrar em certos detalhes com ordem judicial, o senhores a possuem?")
+    $ narrative_image("i02", right, None, i02, "Sim, aqui está doutora")
+    $ narrative_image("psi", left, None, psi, "Hum...")
+    $ narrative_image("psi", left, None, psi, "Vejo que é sobre o paciente [p01_nome], aconteceu algo com ele?")
+    $ narrative_image("i01", right, None, i01, "Não se preocupe quanto a isso, podemos começar?")
+    $ narrative_image("psi", left, None, psi, "Ah, desculpe, claro")
+    $ narrative_image("psi", left, None, psi, "Entre comigo, vamos ao consultório")
 
     return

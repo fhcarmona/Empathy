@@ -10,8 +10,8 @@ label scene_0008:
     scene bar
     with dissolve
 
-    $ narrative_image("bmn", right, None, bmn, "Aqui está sua [bebida]") # bmn "Aqui está sua [bebida]"
-    $ narrative_image("psi", left, None, psi, "Muito obrigada, pode ficar com o troco.") # psi "Muito obrigada, pode ficar com o troco."
+    $ narrative_image("bmn", right, None, bmn, "Aqui está sua [bebida]")
+    $ narrative_image("psi", left, None, psi, "Muito obrigada, pode ficar com o troco.")
 
     pause 2
 

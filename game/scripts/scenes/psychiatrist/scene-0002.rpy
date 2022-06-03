@@ -10,7 +10,6 @@ label scene_0002:
     scene medication_storage
     with dissolve
 
-    #psi "Isso deve bastar"
     $ narrative_image("psi", left, None, psi, "Isso deve bastar")
 
     return

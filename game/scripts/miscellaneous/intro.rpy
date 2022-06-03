@@ -1,7 +1,8 @@
 # AUTHOR: PERALTA GAMES
 # SCOPE: DEFINIR O ACONTECIMENTO DA INTRODUCAO DO JOGO
 
-# INICIO DA INTRODUCAO
+
+# INICIO DA INTRODUCAO - DEPRECATED
 screen intro:
     imagemap:
         ground "images/scenes/intro.png"

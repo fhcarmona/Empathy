@@ -1,7 +1,7 @@
 # AUTHOR: PERALTA GAMES
 # SCOPE: DEFINIR FLUXO DE CENAS DO PLOT DA PSIQUIATRA
 
-label medic:
+label psychiatrist:
     # CHAMA A CENA 01 - CONSULTORIO, PACIENTE 01
     call scene_0001 from _call_scene_0001
 
@@ -50,7 +50,7 @@ label medic:
     # CHAMA A CENA 10 - MENTE HUMANA
     call scene_0010 from _call_scene_0010
 
-    # VOLTA AO INICIO
-    call screen intro
+    # MUDANCA DE PERSPECTIVA
+    call investigator from _call_investigator_1
 
     return

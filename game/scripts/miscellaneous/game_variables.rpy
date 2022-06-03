@@ -1,31 +1,36 @@
 # AUTHOR: PERALTA GAMES
 # SCOPE: DEFINIR E INICIALIZAR TODAS AS VARIAVEIS QUE SERAO USADAS DURANTE O JOGO QUE NAO SEJAM LOCAIS
-
 label game_variables:
     # VARIAVEIS
-    $narrativa=-1                       # ARMAZENA O VALOR DA NARRATIVA ESCOLHIDO PELO JOGADOR
-    $pais="Lisarb"
-    $estado="Oluap"
-    $cidade="Abiu Ciparac"
-    $bairro="Aierroc"
-    $jornal=[0, 0, 0, 0]                # ARMAZENA O JORNAL LIDO
-    $revista=[0, 0, 0, 0]               # ARMAZENA A REVISTA LIDA
-    $inventario=[0, 0]
-    $bebida="Vodka"
+    $ narrativa=-1                                                                  # ARMAZENA O VALOR DA NARRATIVA ESCOLHIDO PELO JOGADOR
+    $ pais="Lisarb"
+    $ estado="Oluap"
+    $ cidade="Abiu Ciparac"
+    $ bairro="Aierroc"
+    $ jornal=[0, 0, 0, 0]                                                           # ARMAZENA O JORNAL LIDO
+    $ revista=[0, 0, 0, 0]                                                          # ARMAZENA A REVISTA LIDA
+    $ inventario=[0, 0, 0]
+    $ item_description = 0
+    $ layer_folder = 1
+    $ niveis_suspeitos=["Testemunha", "Suspeito", "Vítima", "Inocente", "Culpado"]  # NIVEIS DE SUSPEITA
+    $ personagens_sus=[0, 0, 0, 0, 0, 0, 0, 0]                                      # NIVEL DE SUSPEITA DE CADA PERSONAGEM DA LISTA DE PERSONAGEM VISTAS [0- TESTEMUNHA, 1- SUSPEITO, 2- VITIMA, 3- INOCENTE, 4- CULPADO]
+    $ locais_visitados=[0, 0, 0, 0, 0]                                              # LOCAIS VISITADOS PELOS DETETIVES
+    $ personagens_vistos=[0, 0, 0, 0, 0, 0, 0, 0]                                   # PERSONAGENS RELEVANTES PARA O INVESTIGADOR
+    $ bebida="Vodka"
 
     # ESCOLHAS PSIQUIATRA
-    $psi_001=-1                         # DECISAO: PACIENTE 01 SOBRE A FILHA DELE [PROTECAO/INDEPENDENCIA]
-    $psi_002=-1                         # DECISAO:
-    $psi_003=-1                         # DECISAO:
-    $psi_004=-1                         # DECISAO:
-    $psi_005=-1                         # DECISAO:
+    $ psi_001=-1    # DECISAO: PACIENTE 01 SOBRE A FILHA DELE [PROTECAO/INDEPENDENCIA]
+    $ psi_002=-1    # DECISAO:
+    $ psi_003=-1    # DECISAO:
+    $ psi_004=-1    # DECISAO:
+    $ psi_005=-1    # DECISAO:
 
     # ESCOLHAS INVESTIGACAO
-    $inv_001=-1                         # DECISAO:
-    $inv_002=-1                         # DECISAO:
-    $inv_003=-1                         # DECISAO:
-    $inv_004=-1                         # DECISAO:
-    $inv_005=-1                         # DECISAO:
+    $ inv_001=-1    # DECISAO:
+    $ inv_002=-1    # DECISAO:
+    $ inv_003=-1    # DECISAO:
+    $ inv_004=-1    # DECISAO:
+    $ inv_005=-1    # DECISAO:
 
     # NOMES
     $i01_nome="[Investigador] Vinicius"     # INVESTIGADOR 01
