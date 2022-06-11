@@ -12,7 +12,7 @@
 ##
 ## The _() surrounding the string marks it as eligible for translation.
 
-define config.name = _("EMPATHY")
+define config.name = _("Empathy")
 
 
 ## Determines if the title given above is shown on the main menu screen. Set
@@ -23,7 +23,7 @@ define gui.show_name = False
 
 ## The version of the game.
 
-define config.version = "0.7"
+define config.version = "0.8"
 
 
 ## Text that is placed on the game's about screen. Place the text between the

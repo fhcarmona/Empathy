@@ -19,20 +19,21 @@ label scene_1000:
     $ narrative_image("cop", right, None, cop, "Foi solicitado a presença dos responsáveis pelo caso do serial killer")
     $ narrative_image("i01", left, None, i01, "Encontramos eles?")
     $ narrative_image("cop", right, None, cop, "Sim, porém, infelizmente ele não se encontra com vida")
-    $ narrative_image("i02", left, None, i02, "Maldito, ao menos não irá causar mais mal, o que aconteceu?")
+    $ narrative_image("i02", left, None, i02, "O que aconteceu?")
     $ narrative_image("cop", right, None, cop, "Uma mulher foi sequestrada e mantida como refem no porão")
-    $ narrative_image("cop", right, None, cop, "Ela conseguiu escapar e com isso cortou a garganta do assassino")
+    $ narrative_image("cop", right, None, cop, "Ela conseguiu escapar, durante uma luta ela acabou cortando o pescoço do sequestrador")
     $ narrative_image("i02", left, None, i02, "Onde ela está nesse momento? Queremos fazer algumas perguntas")
     $ narrative_image("cop", right, None, cop, "Ela está desacordada, durante a luta, ela foi atingida por um tiro perto da região abdominal")
-    $ narrative_image("cop", right, None, cop, "Encontramos ela perto da saída do porão, a vizinha que nos chamou, devido ao barulho do tiro")
-    $ narrative_image("cop", right, None, cop, "No local do crime foi encontrado algumas drogas controladas, pedi para separarem até vocês chegarem")
+    $ narrative_image("cop", right, None, cop, "Encontramos ela perto da saída do porão. A vizinha que nos chamou, devido ao barulho do tiro")
+    $ narrative_image("cop", right, None, cop, "No local do crime foi encontrado algumas drogas, a arma e o mesmo líquido presente nas vítimas, pedi para separarem até vocês chegarem")
+    $ narrative_image("cop", right, None, cop, "Aqui está os itens encontrado na cena do crime")
+    $ narrative_image("i01", left, None, i01, "Está certo, muito obrigado pelo seu serviço")
 
     # DROGA - INVENTARIO
-    $ narrative_image("cop", right, None, cop, "Aqui está os itens encontrado na cena do crime")
-
     $ inventory(1)
 
-    $ narrative_image("i01", left, None, i01, "Está certo, vamos aguardar a vítima acordar")
+    $ narrative_image("i02", left, None, i02, "Droga! Agora não iremos conseguir interrogar o assassino")
+    $ narrative_image("i01", left, None, i01, "Verdade, teremos que aguardar a vítima acordar e verificar como encerraremos esse caso.")
 
     # ADICIONA INFORMACA DO PERSONAGEM NO INVENTARIO
     $ personagens(7)
@@ -53,7 +54,7 @@ label scene_1000:
 
     #
     $ narrative_image("i02", left, None, i02, "Bom dia doutora [psi_nome], soubemos que acordou. Como você está se sentindo?")
-    $ narrative_image("psi", right, None, psi, "bom dia, investigadores, nem imaginaria que vocês viriam me visitar.")
+    $ narrative_image("psi", right, None, psi, "Bom dia, investigadores, nem imaginaria que vocês viriam me visitar.")
     $ narrative_image("i01", left, None, i01, "Desculpe chegarmos assim, mas estamos a trabalho o médico autorizou a nossa entrada e informou que podemos fazer alguns questionamentos sobre o ocorrido. Tudo bem fazê-lo agora?")
     $ narrative_image("psi", right, None, psi, "Claro, fiquem à vontade")
     $ narrative_image("i02", left, None, i02, "Poderia nos contar o que aconteceu?")
@@ -62,10 +63,12 @@ label scene_1000:
     $ narrative_image("psi", right, None, psi, "Só que ele esqueceu a sua carteira em cima do balcão.")
     $ narrative_image("psi", right, None, psi, "Peguei a carteira e sai para devolver, lembro de levar uma pancada na cabeça e depois disso só acordei amarrada.")
     $ narrative_image("i02", left, None, i02, "E como você fugiu de lá?")
-    $ narrative_image("psi", right, None, psi, "Alguém tocou a campainha da casa e aproveitei esse momento para tentar me soltar. ")
+    $ narrative_image("psi", right, None, psi, "Alguém tocou a campainha da casa e aproveitei esse momento para tentar me soltar.")
     $ narrative_image("psi", right, None, psi, "Agarrei a primeira coisa que vi pela frente e quando tive a oportunidade bati nele e sai correndo")
-    $ narrative_image("psi", right, None, psi, "Então ouvi um disparo e depois uma dor depois disso acordei aqui no hospital.")
+    $ narrative_image("psi", right, None, psi, "Então ouvi um barulho muito alto, meu abdômen começou a doer, vi que estava sangrando e desmaiei.")
+    $ narrative_image("psi", right, None, psi, "Depois disso, acordei aqui no hospital.")
     $ narrative_image("psi", right, None, psi, "O que aconteceu com aquele cara?")
-    $ narrative_image("i02", left, None, i02, "O homem morreu no local, o corte acabou acertando uma parte sensível do pescoço. Agradecemos o seu depoimento, iremos averiguar as evidências.")
+    $ narrative_image("i02", left, None, i02, "O homem morreu no local, o corte acabou acertando uma parte sensível do pescoço.")
+    $ narrative_image("i02", left, None, i02, "Agradecemos o seu depoimento, agora descanse.")
 
     return

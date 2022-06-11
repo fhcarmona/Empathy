@@ -20,11 +20,11 @@ init python:
     def inventory (item):
         # DEFINE A DESCRICAO DO ITEM AO SER PEGO DURANTE O JOGO
         if item==0:
-            renpy.say("", "Informações sobre o líquido verde foi adicionada ao seu inventário")    # LIQUIDO VERDE
+            renpy.say("", "Informações sobre o líquido verde foram adicionadas ao seu inventário")    # LIQUIDO VERDE
         elif item==1:
-            renpy.say("", "Informações sobre a droga foi adicionada ao seu inventário")            # DROGA
+            renpy.say("", "Informações sobre a droga foram adicionadas ao seu inventário")            # DROGA
         elif item==2:
-            renpy.say("", "Informações sobre o pendrive foi adicionada ao seu inventário")         # PENDRIVE
+            renpy.say("", "Informações sobre o pendrive foram adicionadas ao seu inventário")         # PENDRIVE
 
         # DEFINE COMO PEGO O ITEM
         inventario[item]=1
@@ -32,21 +32,21 @@ init python:
     def personagens (personagem):
         # DEFINE A DESCRICAO DOS PERSONAGENS ENCONTRADOS
         if personagem==0:
-            renpy.say("", "Informações sobre o [acp_nome] foi adicionada ao seu inventário")   # ACOMPANHANTE
+            renpy.say("", "Informações sobre o [acp_nome] foram adicionadas ao seu inventário")   # ACOMPANHANTE
         elif personagem==1:
-            renpy.say("", "Informações sobre o [atm_nome] foi adicionada ao seu inventário")   # ATENDENTE MOTEL
+            renpy.say("", "Informações sobre o [atm_nome] foram adicionadas ao seu inventário")   # ATENDENTE MOTEL
         elif personagem==2:
-            renpy.say("", "Informações sobre o [bmn_nome] foi adicionada ao seu inventário")   # BARMAN
+            renpy.say("", "Informações sobre o [bmn_nome] foram adicionadas ao seu inventário")   # BARMAN
         elif personagem==3:
-            renpy.say("", "Informações sobre o [gar_nome] foi adicionada ao seu inventário")   # GARI
+            renpy.say("", "Informações sobre o [gar_nome] foram adicionadas ao seu inventário")   # GARI
         elif personagem==4:
-            renpy.say("", "Informações sobre o [p01_nome] foi adicionada ao seu inventário")   # PACIENTE 01
+            renpy.say("", "Informações sobre o [p01_nome] foram adicionadas ao seu inventário")   # PACIENTE 01
         elif personagem==5:
-            renpy.say("", "Informações sobre o [p03_nome] foi adicionada ao seu inventário")   # PACIENTE 03
+            renpy.say("", "Informações sobre o [p03_nome] foram adicionadas ao seu inventário")   # PACIENTE 03
         elif personagem==6:
-            renpy.say("", "Informações sobre a [psi_nome] foi adicionada ao seu inventário")   # PSIQUIATRA
+            renpy.say("", "Informações sobre a [psi_nome] foram adicionadas ao seu inventário")   # PSIQUIATRA
         elif personagem==7:
-            renpy.say("", "Informações sobre o [skr_nome] foi adicionada ao seu inventário")   # SERIAL KILLER
+            renpy.say("", "Informações sobre o [skr_nome] foram adicionadas ao seu inventário")   # SERIAL KILLER
 
         # DEFINE COMO PEGO O ITEM
         personagens_vistos[personagem]=1
@@ -54,15 +54,15 @@ init python:
     def locais (locais):
         # DEFINE A DESCRICAO DOS LOCAIS VISITADOS
         if locais==0:
-            renpy.say("", "Informações sobre a delegacia de polícia foi adicionada ao seu inventário")    # DELEGACIA DE POLICIA
+            renpy.say("", "Informações sobre a delegacia de polícia foram adicionadas ao seu inventário")    # DELEGACIA DE POLICIA
         elif locais==1:
-            renpy.say("", "Informações sobre a clínica psiquiatrica foi adicionada ao seu inventário")    # CLINICA
+            renpy.say("", "Informações sobre a clínica psiquiátrica foram adicionadas ao seu inventário")    # CLINICA
         elif locais==2:
-            renpy.say("", "Informações sobre o bar foi adicionada ao seu inventário")                     # BAR
+            renpy.say("", "Informações sobre o bar foram adicionadas ao seu inventário")                     # BAR
         elif locais==3:
-            renpy.say("", "Informações sobre o motel foi adicionada ao seu inventário")                   # MOTEL
+            renpy.say("", "Informações sobre o motel foram adicionadas ao seu inventário")                   # MOTEL
         elif locais==4:
-            renpy.say("", "Informações sobre o porão foi adicionada ao seu inventário")                   # PORAO
+            renpy.say("", "Informações sobre o porão foram adicionadas ao seu inventário")                   # PORAO
 
         # DEFINE COMO PEGO O ITEM
         locais_visitados[locais]=1
@@ -75,8 +75,20 @@ label start:
     # PARA A MUSICA DO MENU PRINCIPAL
     stop music fadeout 1.0
 
+    # EXPLICACAO GAME
+    scene black with dissolve
+
+    centered "Os acontecimentos a seguir não ocorrem de forma ordenada."
+
+    centered "Compreenda os ocorridos e desvende esse mistério."
+
+    centered "Boa sorte."
+
     # SCENE-0001 - CONSULTORIO, PACIENTE 01
     call psychiatrist from _call_psychiatrist
+
+    # SCENE-0100 - DELEGACIA
+    # call investigator
 
     # FINALIZA O JOGO
     return

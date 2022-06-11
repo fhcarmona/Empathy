@@ -32,10 +32,10 @@ label scene_0900:
 
     scene black
 
-    tln "13/05/2022 - 11:13h | TRAILER DE HOTDOG"
+    tln "13/05/2022 - 11:13h | LANCHONETE"
 
     # LIMPA A TELA E MOSTRA O AMBIENTE
-    scene hot-dog-stand
+    scene cafeteria
     with dissolve
 
     show screen cluesUI
@@ -49,9 +49,7 @@ label scene_0900:
     $ narrative_image("i01", left, None, i01, "A cor verde?")
     $ narrative_image("i02", left, None, i02, "Não, mais que isso, a presença de organismos e alga")
     $ narrative_image("i01", left, None, i01, "O que tem isso?")
-    $ narrative_image("i02", left, None, i02, "Acredito que haja uma relação entre as vítimas e esse trauma")
-    $ narrative_image("i02", left, None, i02, "E na sala da psiquiatra muitos remédios")
-    $ narrative_image("i02", left, None, i02, "Vamos voltar para a delegacia")
+    $ narrative_image("i02", left, None, i02, "Acredito que haja uma relação entre o caso da [p03_nome] e os assassinatos")
 
     hide screen cluesUI
 
@@ -65,13 +63,15 @@ label scene_0900:
 
     show screen cluesUI
 
-    $ narrative_image("i02", left, None, i02, "Baseado na localidade das vítimas, elas estão em um range menor que vinte e cinco quilômetros")
-    $ narrative_image("i01", left, None, i01, "Isso é um busca bem grande, mas já sabiamos disso, onde quer chegar?")
-    $ narrative_image("i02", left, None, i02, "Agora, se você filtra por lagos")
-    $ narrative_image("i02", left, None, i02, "E depois filtra por consultórios de psiquiatrias")
+    $ narrative_image("i02", left, None, i02, "Baseado na localidade das vítimas, elas estão em uma proximidade menor que vinte e cinco quilômetros")
+    $ narrative_image("i01", left, None, i01, "Isso é um busca bem grande, mas já sabíamos disso, onde quer chegar?")
+    $ narrative_image("i02", left, None, i02, "Agora, se você ver onde a [p03_nome] mora e onde ocorreu o trauma dela")
+    $ narrative_image("i02", left, None, i02, "E depois filtra por consultórios de psiquiatria")
     $ narrative_image("i02", left, None, i02, "Voilà!")
     $ narrative_image("i01", left, None, i01, "Coincidência nossa psiquiatra ser o único consultório nesse filtro?")
     $ narrative_image("i02", left, None, i02, "Deveria saber que coincidência nesse ramo não existe")
+    $ narrative_image("i01", left, None, i01, "Sinto que estamos mais perto!")
+    $ narrative_image("i02", left, None, i02, "Vamos!")
 
     if personagens_vistos[6]==0:
         # ADICIONA INFORMACAO DO PERSONAGEM NO INVENTARIO

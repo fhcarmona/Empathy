@@ -40,4 +40,7 @@ label investigator:
     # CHAMA A CENA 1000 - RESGATE PSIQUIATRA, HOSPITAL
     call scene_1000 from _call_scene_1000
 
+    # CHAMA A CENA 1100 - FINAL
+    call scene_1100 from _call_scene_1100
+
     return

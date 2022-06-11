@@ -268,6 +268,8 @@ screen quick_menu():
 init python:
     config.overlay_screens.append("quick_menu")
 
+    change_title=False
+
 default quick_menu = True
 
 style quick_button is default
@@ -302,7 +304,7 @@ screen navigation():
             textbutton _("Controles") action ShowMenu("help")
             textbutton _("Sair") action Quit(confirm=not main_menu)
 
-            timer 5 repeat True action [ Play("sound", "audio/sfx/heart_beating.mp3") ]
+            #timer 5 repeat True action [ Play("sound", "audio/sfx/heart_beating.mp3") ]
 
         # IN-GAME
         else:
@@ -363,7 +365,13 @@ screen main_menu():
         xpos 0.5
         xanchor 0.5
         yoffset 100
-        text "{color=#c4a77b}E{/color}{color=#2e1314}mpat{/color}{color=#683f31}h{/color}{color=#060606}y{/color}" size 64 font "fonts/viner-hand-itc.ttf"
+
+        timer 0.2 repeat True action ToggleVariable('change_title')
+
+        if change_title:
+            text "{color=#4A53E1AF}EMP{/color}{color=#F6F8F788}A{/color}{color=#FF617088}THY{/color}" size 72 #font "fonts/viner-hand-itc.ttf"
+        else:
+            text "{color=#4A53E188}EMP{/color}{color=#F6F8F788}A{/color}{color=#FF6170AF}THY{/color}" size 72 #font "fonts/viner-hand-itc.ttf"
 
     if gui.show_name:
 
@@ -986,13 +994,13 @@ screen keyboard_help():
         label _("Escape")
         text _("Acessa o menu do jogo.")
 
-    hbox:
-        label _("Ctrl")
-        text _("Pula o diálogo enquanto estiver pressionado.")
+    #hbox:
+    #    label _("Ctrl")
+    #    text _("Pula o diálogo enquanto estiver pressionado.")
 
-    hbox:
-        label _("Tab")
-        text _("Muda o modo de diálogo.")
+    #hbox:
+    #    label _("Tab")
+    #    text _("Muda o modo de diálogo.")
 
     hbox:
         label _("Page Up")
@@ -1002,21 +1010,21 @@ screen keyboard_help():
         label _("Page Down")
         text _("Desce o texto de diálogo.")
 
-    hbox:
-        label "H"
-        text _("Esconde a interface.")
+    #hbox:
+    #    label "H"
+    #    text _("Esconde a interface.")
 
-    hbox:
-        label "S"
-        text _("Tira uma foto.")
+    #hbox:
+    #    label "S"
+    #    text _("Tira uma foto.")
 
     #hbox:
     #    label "V"
     #    text _("Altera o assistente de {a=https://www.renpy.org/l/voicing}voz{/a}.")
 
-    hbox:
-        label "Shift+A"
-        text _("Abre o menu de acessibilidade.")
+    #hbox:
+    #    label "Shift+A"
+    #    text _("Abre o menu de acessibilidade.")
 
 
 screen mouse_help():

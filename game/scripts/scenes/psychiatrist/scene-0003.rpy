@@ -10,7 +10,7 @@ label scene_0003:
     scene clinic
     with dissolve
 
-    $ narrative_image("psi", left, None, psi, "Agora irei preescrever alguns exames para você fazer, me informe assim que receber os resultados")
+    $ narrative_image("psi", left, None, psi, "Agora irei prescrever alguns exames para você fazer, me informe assim que receber os resultados")
     $ narrative_image("psi", left, None, psi, "Após o resultado, retorne a mim e irei prescrever os remédios necessários para o tratamento adequado")
     $ narrative_image("p02", right, None, p02, "Sem remédios doutora, não preciso deles")
     $ narrative_image("psi", left, None, psi, "Após os exames verificarei se precisará ou não")

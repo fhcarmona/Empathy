@@ -11,20 +11,33 @@ label scene_0008:
     with dissolve
 
     $ narrative_image("bmn", right, None, bmn, "Aqui está sua [bebida]")
-    $ narrative_image("psi", left, None, psi, "Muito obrigada, pode ficar com o troco.")
+    $ narrative_image("psi", left, None, psi, "Muito obrigada, mas estou sem tempo, pode ficar com o troco.")
+    $ narrative_image("bmn", right, None, bmn, "Agradecido, tenha uma boa noite")
 
-    pause 2
-
+    # PERSEGUE RUA
     scene street
     with dissolve
 
-    pause 2
-
-    scene street-corner
-    with dissolve
+    play sound footsteps
     with Pause(2)
 
+    stop sound
+
+    # PERSEGUE BECO
+    scene street-corner
+    with dissolve
+
+    play sound footsteps
+    with Pause(2)
+
+    stop sound
+
+    # DESMAIA
+    $ narrative_image("psi", left, None, psi, "Onde ele foi parar?")
+
     scene black
-    with Pause(3)
+
+    play sound bonk
+    with Pause(2)
 
     return

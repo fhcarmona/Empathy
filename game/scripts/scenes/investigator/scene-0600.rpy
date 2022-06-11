@@ -25,7 +25,7 @@ label scene_0600:
     $ narrative_image("acp", right, None, acp, "Ele recebeu uma ligação, ficou um pouco desesperado e saiu")
     $ narrative_image("i02", left, None, i02, "Lembra de algo que ele tenha dito ou escutado desse telefonema?")
     $ narrative_image("acp", right, None, acp, "Não deu para entender muito bem... Parecia que era uma mulher gritando no telefone")
-    $ narrative_image("acp", right, None, acp, "Ele me disse que teria que ajudar a prima dele, pediu desculpas e saiu")
+    $ narrative_image("acp", right, None, acp, "Ele me disse que teria que ajudar uma parente dele, pediu desculpas e saiu")
     $ narrative_image("acp", right, None, acp, "Foi tudo bem repentino, não consegui nem me despedir direito")
     $ narrative_image("i01", left, None, i01, "Saberia dizer qual o horário do ocorrido? E o que fez depois disso?")
     $ narrative_image("acp", right, None, acp, "Deve ter sido por volta das 02:00h")

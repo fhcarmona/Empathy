@@ -11,8 +11,6 @@ label scene_0100:
 
     show screen cluesUI
 
-    play music "audio/musics/investigator.mp3"
-
     #
     $ narrative_image("i02", left, None, i02, "O que você está lendo [i01_nome]?")
     $ narrative_image("i01", left, None, i01, "Sobre o caso de ontem... apareceu no jornal")
@@ -26,7 +24,7 @@ label scene_0100:
 
     scene black
 
-    tln "17/04/2022 - 10:37h | GABINETE DO CHEFE DE POLÍCIA"    
+    tln "17/04/2022 - 10:37h | GABINETE DO CHEFE DE POLÍCIA"
 
     # LIMPA A TELA E MOSTRA A SALA DO CHEFE DE POLICIA
     scene chiefs-room

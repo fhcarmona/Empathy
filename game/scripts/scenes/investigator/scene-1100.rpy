@@ -16,8 +16,8 @@ label scene_1100:
     show screen cluesUI
 
     #
-    $ narrative_image("dlg", right, None, dlg, "Bom dia senhores, amanhã teremos uma conferência para responder algumas perguntas dos reporteres e população cívil.")
-    $ narrative_image("dlg", right, None, dlg, "Eu farei uma apresentação e deixarei vocês respondendo os questionamentos.")
+    $ narrative_image("dlg", right, None, dlg, "Bom dia senhores, amanhã teremos uma conferência para responder algumas perguntas dos repórteres e população civil.")
+    $ narrative_image("dlg", right, None, dlg, "Eu farei uma apresentação com as evidências e conclusões finais.")
     $ narrative_image("dlg", right, None, dlg, "Quero que vejam as evidências e até o final desta tarde me entreguem o relatório para encerrar o caso.")
 
     hide screen cluesUI
@@ -66,7 +66,7 @@ label scene_1100:
     $ narrative_image("dlg", right, None, dlg, "A morte de [skr_nome] foi causada pela reação da Doutora [psi_nome] que se encontrava presa em seu porão.")
 
     if personagens_sus[6] == 4:
-        $ narrative_image("dlg", right, None, dlg, "Inicialmente acreditavamos que fosse uma possível próxima vítima, porém, baseado nas evidências que conseguimos coletar.")
+        $ narrative_image("dlg", right, None, dlg, "Inicialmente acreditávamos que fosse uma possível próxima vítima, porém, baseado nas evidências que conseguimos coletar.")
         $ narrative_image("dlg", right, None, dlg, "Conseguimos identificar que a [psi_nome] tinha como objetivo assassinar o [skr_nome].")
         $ narrative_image("dlg", right, None, dlg, "Um processo foi aberto e ela será indiciada por homícidio doloso.")
         $ narrative_image("dlg", right, None, dlg, "Ela atualmente se encontra no hospital, se recuperando dos ferimentos da luta.")
@@ -75,12 +75,15 @@ label scene_1100:
         $ narrative_image("dlg", right, None, dlg, "Ela se encontra em estado estável no hospital da cidade.")
         $ narrative_image("dlg", right, None, dlg, "Graças a bravura da Doutora [psi_nome] e de toda a equipe da delegacia, podemos descansar novamente sabendo que o Serial Killer foi pego.")
 
-    $ narrative_image("dlg", right, None, dlg, "Com isso encerramos o relatório final do caso e agora passaremos a perguntas...")
-    $ narrative_image("i01", left, None, i01, "Bom dia a todos")
-    $ narrative_image("i02", left, None, i02, "Os detalhes do relatório estarão disponíveis ao final desta conferência")
-    $ narrative_image("i01", left, None, i01, "Agora vamos as perguntas")
+    $ narrative_image("dlg", right, None, dlg, "Com isso encerramos o relatório final, agradecemos a presença de todos...")
 
-    scene black
+    stop music fadeout 2.0
+
+    scene black with dissolve
+
+    centered "Caso Lector encerrado"
+
+    play music ending volume 0.5
 
     $relatorio_caso = "RESULTADO GAMEPLAY:\n\n{color=#FFF7}"
 
@@ -99,19 +102,33 @@ label scene_1100:
             elif i == 4:
                 relatorio_caso+=p01_nome+": "
             elif i == 5:
-                relatorio_caso+=p02_nome+": "
-            elif i == 6:
                 relatorio_caso+=p03_nome+": "
-            elif i == 7:
+            elif i == 6:
                 relatorio_caso+=psi_nome+": "
-            elif i == 8:
+            elif i == 7:
                 relatorio_caso+=skr_nome+": "
 
-            relatorio_caso+=niveis_suspeitos[int(personagens_sus[0])]+"\n"
+            relatorio_caso+=niveis_suspeitos[int(personagens_sus[i])]+"\n"
 
 
     # MOSTRA O RESULTADO EM TELA
     centered "[relatorio_caso]{/color}"
+
+    centered "ALGUM TEMPO DEPOIS"
+
+    if personagens_sus[6] == 4:
+        centered "Ao sair do hospital, Rosana foi presa por homícidio doloso e obstrução de justiça."
+        centered "Baseado no testemunho de Bruno e da evidência do remédio encontrado no porão, foi possível estabelecer que Rosana foi intencionalmente ao encontro com o assassino."
+        centered "\"... ela se utilizava de sua faceta de cidadã e sua empatia para manipular e agir de forma sociopata.\" - Psiquiatra Sobre Rosana"
+        centered "Foi descoberto posteriormente que Rosana havia feito outras vítimas em seu passado, antes da chegada na cidade."
+        centered "Após o julgamento ela foi transferida para um presídio feminino e ficará sob tratamento psiquiatrico durante todo processo."
+    else:
+        centered "Ao sair do hospital, Rosana foi entrevistada por diversos meios de reportagem."
+        centered "Nenhuma acusação caiu sobre ela, o caso foi considerado como legítima defesa."
+        centered "Anos depois lançou um livro contando mais sobre o ocorrido"
+
+        play sound laugh
+        with Pause(5)
 
     centered "Créditos\n\nArte\n{color=#FFF7}Daniel Claper Cundari Teixeira de Barros\nGabriel Oliveira Pereira dos Santos\nLissiane Trajano Pereira{/color}\n\nAúdio\n{color=#FFF7}Gabriel Oliveira Pereira dos Santos{/color}\n\nRoteiro\n{color=#FFF7}Fábio Henrique Carmona\nLissiane Trajano Pereira{/color}\n\nProgramação\n{color=#FFF7}Fábio Henrique Carmona{/color}\n\nQA\n{color=#FFF7}Helber Roberto dos Reis{/color}"
     centered "A equipe Peralta Games agradece por jogar!"

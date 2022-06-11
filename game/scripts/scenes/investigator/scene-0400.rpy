@@ -31,7 +31,7 @@ label scene_0400:
     $ narrative_image("i02", left, None, i02, "Se recorda da última vez que ele estava no bar?")
     $ narrative_image("bmn", right, None, bmn, "Sim, como ele era uma pessoa bem alegre, fica difícil não lembrar quando vem")
     $ narrative_image("bmn", right, None, bmn, "Na última noite ele estava alegre dançando com uma pessoa ruiva")
-    $ narrative_image("bmn", right, None, bmn, "Depois de beber algumas eles sairam")
+    $ narrative_image("bmn", right, None, bmn, "Depois de beber algumas eles saíram")
     $ narrative_image("i01", left, None, i01, "Sabe a onde foram?")
     $ narrative_image("bmn", right, None, bmn, "Não, ele pagou e sai fora")
     $ narrative_image("bmn", right, None, bmn, "Não cheguei a notar nada diferente, ele tem o costume de sair acompanhado")

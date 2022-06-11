@@ -1,40 +1,40 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 82, in script call
-    call investigator
-  File "game/scripts/miscellaneous/investigator.rpy", line 26, in script call
-    call scene_0500 from _call_scene_0500
-  File "game/scripts/scenes/investigator/scene-0500.rpy", line 45, in script
-    $ inventory(3)
-  File "game/scripts/scenes/investigator/scene-0500.rpy", line 45, in <module>
-    $ inventory(3)
-  File "game/script.rpy", line 30, in inventory
-    inventario[item]=1
-IndexError: list assignment index out of range
+  File "game/script.rpy", line 88, in script call
+    call psychiatrist from _call_psychiatrist
+  File "game/scripts/miscellaneous/psychiatrist.rpy", line 54, in script call
+    call investigator from _call_investigator_1
+  File "game/scripts/miscellaneous/investigator.rpy", line 44, in script call
+    call scene_1100 from _call_scene_1100
+  File "game/scripts/scenes/investigator/scene-1100.rpy", line 88, in script
+    python:
+  File "game/scripts/scenes/investigator/scene-1100.rpy", line 111, in <module>
+    relatorio_caso+=niveis_suspeitos[int(personagens_sus[i+1])]+"\n"
+IndexError: list index out of range
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 82, in script call
-    call investigator
-  File "game/scripts/miscellaneous/investigator.rpy", line 26, in script call
-    call scene_0500 from _call_scene_0500
-  File "game/scripts/scenes/investigator/scene-0500.rpy", line 45, in script
-    $ inventory(3)
+  File "game/script.rpy", line 88, in script call
+    call psychiatrist from _call_psychiatrist
+  File "game/scripts/miscellaneous/psychiatrist.rpy", line 54, in script call
+    call investigator from _call_investigator_1
+  File "game/scripts/miscellaneous/investigator.rpy", line 44, in script call
+    call scene_1100 from _call_scene_1100
+  File "game/scripts/scenes/investigator/scene-1100.rpy", line 88, in script
+    python:
   File "renpy/ast.py", line 928, in execute
     renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
   File "renpy/python.py", line 2245, in py_exec_bytecode
     exec(bytecode, globals, locals)
-  File "game/scripts/scenes/investigator/scene-0500.rpy", line 45, in <module>
-    $ inventory(3)
-  File "game/script.rpy", line 30, in inventory
-    inventario[item]=1
-  File "renpy/python.py", line 875, in do_mutation
-    return method(self, *args, **kwargs)
-IndexError: list assignment index out of range
+  File "game/scripts/scenes/investigator/scene-1100.rpy", line 111, in <module>
+    relatorio_caso+=niveis_suspeitos[int(personagens_sus[i+1])]+"\n"
+  File "renpy/python.py", line 992, in __getitem__
+    rv = list.__getitem__(self, index)
+IndexError: list index out of range
 
 Windows-10-10.0.19041
 Ren'Py 7.4.11.2266
-EMPATHY 0.7
-Fri Jun  3 16:40:16 2022
+Empathy 0.8
+Wed Jun  8 14:16:57 2022

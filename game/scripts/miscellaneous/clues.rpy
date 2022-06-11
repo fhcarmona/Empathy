@@ -63,7 +63,7 @@ screen cluesMenu():
                 frame:
                     style_prefix "paperwork_item_description"
 
-                    text "Líquido verde\n\nMaterial encontrado nos pulmões das vítimas, composto por microorganismos e outros materiais orgânicos"
+                    text "Líquido verde\n\nMaterial encontrado nos pulmões das vítimas, composto por micro-organismos e outros materiais orgânicos"
 
         # SE INVESTIGADOR TIVER PEGO A DROGA
         if inventario[1] == 1:
@@ -82,7 +82,7 @@ screen cluesMenu():
                 frame:
                     style_prefix "paperwork_item_description"
 
-                    text "Droga\n\nEncontrado no chão do porão da quarta vítima, não foi possível indentificar a origem, pode causar mal estar e em grandes quantidades causar tontura ou morte."
+                    text "Droga\n\nEncontrado no chão do porão da quarta vítima, não foi possível identificar a origem, pode causar mal-estar e em grandes quantidades causar tontura ou morte."
 
         # SE INVESTIGADOR TIVER PEGO O PENDRIVE
         if inventario[2] == 1:
@@ -132,7 +132,7 @@ screen cluesMenu():
                             textbutton "(Trocar)":
                                 action SetDict(personagens_sus, 0, int(personagens_sus[0]) + 1)
 
-                    text "\n\nNome: Veronica \nProfissão: Modelo\nIdade: 21 anos\nHistórico Criminal: Estelionato, falsidade ideológica\n\nÚltima pessoa a ser vista em um vídeo com a terceira vítima, estava no bar e acompanhou a vítima na saida. Durante a noite no motel, a vítima atendeu o celular, que o fez ir embora."
+                    text "\n\nNome: Veronica \nProfissão: Modelo\nIdade: 21 anos\nHistórico Criminal: Estelionato, falsidade ideológica\n\nÚltima pessoa a ser vista em um vídeo com a terceira vítima, estava no bar e acompanhou a vítima na saída. Durante a noite no motel, a vítima atendeu o celular, que o fez ir embora."
 
         # ATENDENTE MOTEL
         if personagens_vistos[1] == 1:
@@ -248,7 +248,7 @@ screen cluesMenu():
                             textbutton "(Trocar)":
                                 action SetDict(personagens_sus, 4, int(personagens_sus[4]) + 1)
 
-                    text "\n\nNome: Douglas\nProfissão: Operador de Piscina\nIdade: 33 anos\nHistórico Criminal: Agressão, stalking, tentativa de homícidio\n\nDouglas preso por agressão que ocorreu em uma festa infantil. Estava sobre a julgamento por stalking e estava obrigado a frequentar uma psiquiatra devidos a essas explosões agressivas."
+                    text "\n\nNome: Douglas\nProfissão: Operador de Piscina\nIdade: 33 anos\nHistórico Criminal: Agressão, stalking, tentativa de homícidio\n\nDouglas preso por agressão que ocorreu em uma festa infantil. Estava sobre o julgamento por stalking e estava obrigado a frequentar uma psiquiatra devido a explosões de agressividade."
 
         # PACIENTE 03
         if personagens_vistos[5] == 1:
@@ -306,7 +306,7 @@ screen cluesMenu():
                             textbutton "(Trocar)":
                                 action SetDict(personagens_sus, 6, int(personagens_sus[6]) + 1)
 
-                    text "\n\nNome: Rosana\nProfissão: Psiquiatra\nIdade: 36 anos\nHistórico Criminal: Nenhuma ocorrência\n\nPsiquiatra que trabalha com foco em agressões e traumas. Já foi a diversos programas para conversar sobre psiquiatria e possui uma lista enorme de méritos em sua carreira. Responsável pelo tratamento de Douglas, indicado pela juiza do caso."
+                    text "\n\nNome: Rosana\nProfissão: Psiquiatra\nIdade: 36 anos\nHistórico Criminal: Nenhuma ocorrência\n\nPsiquiatra que trabalha com foco em agressões e traumas. Já foi a diversos programas para conversar sobre psiquiatria e possui uma lista enorme de méritos em sua carreira. Responsável pelo tratamento de Douglas, indicado pela juíza do caso."
 
         # SERIAL KILLER
         if personagens_vistos[7] == 1:
@@ -361,9 +361,6 @@ screen cluesMenu():
                     hbox:
                         text "Delegacia de Polícia"
 
-                        textbutton "(Investigar)":
-                            action NullAction()
-
                     text "\n\nLocalizada perto do centro da cidade a única delegacia da cidade normalmente é pouco movimentada, sem grandes detalhes."
 
         # CLINICA
@@ -385,9 +382,6 @@ screen cluesMenu():
 
                     hbox:
                         text "Clínica Psiquiatrica"
-
-                        textbutton "(Investigar)":
-                            action NullAction()
 
                     text "\n\nClínica de uma famosa psiquiatra Rosana."
 
@@ -411,9 +405,6 @@ screen cluesMenu():
                     hbox:
                         text "Bar"
 
-                        textbutton "(Investigar)":
-                            action NullAction()
-
                     text "\n\nBar onde a terceira vítima frequentava."
 
         # MOTEL
@@ -436,10 +427,7 @@ screen cluesMenu():
                     hbox:
                         text "Motel"
 
-                        textbutton "(Investigar)":
-                            action NullAction()
-
-                    text "\n\nUm dos quatro motéis mais próximos ao bar onde a terceira vítima frequentava, foi possível identificar que a terceira vítima foi até o local no dia do seu assassinato. Obtivemos uma vídeo do acontecimento e foi entregue em um pendrive."
+                    text "\n\nUm dos quatro motéis mais próximos ao bar onde a terceira vítima frequentava, foi possível identificar que a terceira vítima foi até o local no dia do seu assassinato. Obtivemos um vídeo do acontecimento e foi entregue em um pendrive."
 
         # PORAO
         if locais_visitados[4] == 1:
@@ -461,10 +449,7 @@ screen cluesMenu():
                     hbox:
                         text "Porão do Serial Killer"
 
-                        textbutton "(Investigar)":
-                            action NullAction()
-
-                    text "\n\nLocal onde a doutora Rosana estava sendo mantida presa. O porão possui isolamento acustico, a polícia foi chamada ao local devido ao barulho de tiro na tentativa de fuga da doutora."
+                    text "\n\nLocal onde a doutora Rosana estava sendo mantida presa. O porão possui isolamento acústico, a polícia foi chamada ao local devido ao barulho de tiro na tentativa de fuga da doutora."
 
     # BOTAO PARA FECHAR O INVENTARIO
     textbutton _("X"):

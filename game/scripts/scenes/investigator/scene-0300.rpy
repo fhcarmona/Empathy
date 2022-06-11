@@ -17,7 +17,7 @@ label scene_0300:
     $ narrative_image("gar", right, None, gar, "Era aproximadamente seis horas da manhã, no dia que encontrei o corpo eu estava rotacionando o local de limpeza")
     $ narrative_image("gar", right, None, gar, "Limpando o local mais distante da praça, notei que havia uma roupa em um arbusto")
     $ narrative_image("gar", right, None, gar, "Descendo um pequeno declínio, vi uma pessoa desacordada")
-    $ narrative_image("gar", right, None, gar, "A primeiro momento contactei meu colega e pedi para ele contactar a ambulância")
+    $ narrative_image("gar", right, None, gar, "A primeiro momento contatei meu colega e pedi para ele contactar a ambulância")
     $ narrative_image("gar", right, None, gar, "Enquanto ele ligava desci para tentar acordar a pessoa, mas só depois de um tempo notei que estava morto")
     $ narrative_image("i02", left, None, i02, "O que fez você imaginar que ele estava desacordado?")
     $ narrative_image("gar", right, None, gar, "Normalmente este rapaz sempre estava perto da região, em alguns bares")

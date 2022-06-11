@@ -16,7 +16,7 @@ label scene_0500:
 
     # CONTEXTO MOTEL
     $ narrative_image("i02", left, None, i02, "Bom, depois desse, vamos para o último")
-    $ narrative_image("i01", left, None, i01, "Que bom que eram apenas quatro hoteis nas proximidades do parque")
+    $ narrative_image("i01", left, None, i01, "Que bom que eram apenas quatro hotéis nas proximidades do parque")
     $ narrative_image("i02", left, None, i02, "Sim, bora entrar e conversar com a atendente")
 
     hide screen cluesUI

@@ -25,7 +25,7 @@ label scene_0200(caminho):
         $ narrative_image("p01", right, None, p01, "Qual seria esse benefício?")
         $ narrative_image("i02", left, None, i02, "Dependendo do quanto colaborar poderemos ajudar em sua sentença")
         $ narrative_image("p01", right, None, p01, "Entendo, então para isso, desejo meu advogado")
-        $ narrative_image("i02", left, None, i02, "Iremos contactar ele")
+        $ narrative_image("i02", left, None, i02, "Iremos contatar ele")
 
         hide screen cluesUI
 
@@ -143,8 +143,7 @@ label scene_0200(caminho):
             $ narrative_image("i02", left, None, i02, "Infelizmente o homem se encontra internado, foi determinado a prisão do [p01_nome]")
         else:
             $ narrative_image("i01", left, None, i01, "Ele começou a ficar agressivo e quase agrediu um homem na festa de uma amiga da filha")
-            $ narrative_image("i01", left, None, i01, "Começou a ficar agressivo após ver a filha no colo do pai da aniversariante")
-            $ narrative_image("i02", left, None, i02, "Por sorte o surto dele foi controlado, mas isso infligiu a determinação jurídica e ele voltará a prisão")
+            $ narrative_image("i02", left, None, i02, "Por sorte o surto dele foi controlado, mas isso infligiu uma determinação do juiz e ele voltará a prisão")
 
         $ narrative_image("psi", right, None, psi, "Nossa...")
         $ narrative_image("i01", left, None, i01, "E por determinação do delegado estamos aqui para entender melhor sobre o caso dele")

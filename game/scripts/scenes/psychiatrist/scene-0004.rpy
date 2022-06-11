@@ -13,7 +13,7 @@ label scene_0004:
     $ narrative_image("i01", right, None, i01, "Bom dia [psi_nome], somos os [i02_nome] e este é o [i01_nome], somos responsáveis pelo caso de um de seus pacientes")
     $ narrative_image("i01", right, None, i01, "Poderia nos ajudar com algumas questões?")
     $ narrative_image("psi", left, None, psi, "Claro, mas só posso entrar em certos detalhes com ordem judicial, o senhores a possuem?")
-    $ narrative_image("i02", right, None, i02, "Sim, aqui está doutora")
+    $ narrative_image("i02", right, None, i02, "Sim, aqui está.")
     $ narrative_image("psi", left, None, psi, "Hum...")
     $ narrative_image("psi", left, None, psi, "Vejo que é sobre o paciente [p01_nome], aconteceu algo com ele?")
     $ narrative_image("i01", right, None, i01, "Não se preocupe quanto a isso, podemos começar?")

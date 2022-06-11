@@ -6,7 +6,7 @@ label scene_0800:
 
     scene black
 
-    tln "12/05/2022 - 19:01h | CASA DA PRIMA DA VITIMA"
+    tln "12/05/2022 - 19:01h | RESIDÊNCIA DE CAMILA"
 
     # LIMPA A TELA E MOSTRA O AMBIENTE
     scene pri-house-entrance

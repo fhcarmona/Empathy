@@ -18,16 +18,27 @@ label scene_0010:
     $ narrative_image("skr", right, None, skr, "Acredita mesmo que seja coincidência? Pois eu acho que...")
 
     scene black
-    with Pause(2)
 
+    # FACADA
     play sound stab
     with Pause(2)
 
+    # TIRO
     play sound gunfire
-    with Pause(1)
+    with Pause(3)
 
-    $ narrative_image("psi sad", left, None, psi, "Ah, que dor")
+    $ narrative_image("psi sad", left, None, psi, "Meu abdômen...")
 
-    pause 5
+    scene black
+
+    # DESMAIO
+    play sound fall
+    with Pause(2)
+
+    stop music fadeout 2.0
+
+    centered "O destino foi definido."
+
+    play music "audio/musics/investigator.mp3"
 
     return
